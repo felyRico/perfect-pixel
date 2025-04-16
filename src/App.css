@@ -1,52 +1,100 @@
-.wrapper {
+.main {
   width: 100vw;
   height: 100vh;
-  background-color: #1F1E1E;
+  background: #1F1E1E;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.caption, .headline {
+p, h1 {
   margin: 0;
   padding: 0;
-  font-weight: 700;
 }
 
-.rectangle {
+.con {
   width: 52.083vw;
   height: 33.438vw;
-  background-color: black;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
-.caption {
+.image img {
+  width: 20.573vw;
+  position: relative;
+  top: 2.211vw;
+}
+
+.subtext {
   width: 9.323vw;
   height: 1.25vw;
-  font-size: 1.020vw;
+  font-size: 1.042vw;
   color: #86868B;
 }
 
-.headline {
+.title {
   width: 17.656vw;
   font-size: 2.188vw;
+  font-weight: 700;
 }
 
-.description {
+.maintext {
   width: 18.438vw;
   height: 13.75vw;
   font-size: 0.938vw;
   color: #86868B;
 }
 
-.description span {
+span {
   color: white;
 }
 
-
-.phone-img {
-  width: 20.573vw;
+.mobile {
+  display: none;
 }
 
+@media screen and (max-width: 720px) {
+  .mobile {
+    display: block;
+    width: 83.333vw;
+    height: 152.778vw;
+  }
+  
+  .subtext {
+    width: 24.861vw;
+    font-size: 2.778vw;
+  }
+  
+  .title {
+    width: 47.083vw;
+    font-size: 5.833vw;
+    font-weight: 700;
+  }
+  
+  .maintext {
+    width: 64.861vw;
+    font-size: 2.5vw;
+  }
+  
+  .image img {
+    width: 55vw;
+    height: 78.661vw;
+    top: 9vw;
+    left: 25vw;
+    bottom: 0;
+  }
+  
+  .desktop {
+    display: none;
+  }
+  
+  .contentText {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin: 10vw 10vw;
+  }
+}
